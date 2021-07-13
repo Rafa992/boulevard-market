@@ -1,0 +1,278 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url(../fontawesome/fa-light-300.ttf)
+}
+@font-face {
+    font-family: 'fontawesome';
+    src: url(../fontawesome/fa-brands-400.ttf)
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.icon {
+    font-family: 'fontawesome';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 700px; 
+}
+
+.nav__panel {
+    background-color: #282828;
+    min-height: 57px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list li a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.header__links {
+    display: flex;
+}
+
+.header__links span {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.header__links span:first-child {
+    margin-right: 25px;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__title h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 75px;
+    color: #FFFFFF;
+    font-family: 'Prosto One';
+    margin-bottom: 38px;
+}
+
+.header__title .header__link {
+    display: inline-block;
+    padding: 13px 14px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #171718;
+}
+
+.header__title .header__link span {
+    display: inline-block;
+    margin-left: 11px;
+}
+
+/*main*/
+
+.main {
+    padding-top: 30px;
+    padding-bottom: 55px;
+    background: #151515;
+}
+
+.airpods {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.airpods__item-text {
+    max-width: 540px;
+    width: 100%;
+}
+
+.airpods__item-text p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.airpods__item {
+    max-width: 552px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.airpods__big {
+    display: flex;
+    align-items: center;
+    margin-bottom: 79px;
+    justify-content: space-between;
+}
+
+.airpods__left,
+ .airpods__right {
+    max-width: 333px;
+    width: 100%;
+}
+
+.airpods__center {
+    max-width: 268px;
+    width: 100%;
+}
+
+.airpods__left p,
+ .airpods__right p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.airpods__left p {
+    text-align: right;
+}
+
+.airpods__big span {
+    display: block;
+    max-width: 61px;
+    width: 100%;
+    height: 1px;
+    background: #C4C4C4;
+}
+
+.iphones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iphone {
+    max-width: 255px;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+.iphone h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.price {
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-transform: uppercase;
+color: #000000;
+display: inline-block;
+padding: 10px 0 20px;
+}
+
+.iphone__link {
+    max-width: 161px;
+    width: 100%;
+    padding: 7px 0;
+    background: #151515;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 81px 0;
+    background: #282828;
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.footer__links span {
+    font-size: 45px;
+    color: #fff;
+}
+
+.footer__links span:first-child {
+    margin-right: 29px;
+}
+
+
