@@ -94,6 +94,7 @@ img {
     background: url(../img/Header.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .header__title h1 {
@@ -267,7 +268,8 @@ padding: 10px 0 20px;
 }
 
 .footer__links span {
-    font-size: 45px;
+    line-height: 55px;
+    font-size: 55px;
     color: #fff;
 }
 
