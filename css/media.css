@@ -1,6 +1,26 @@
 @media (max-width: 1200px) {
+    
     .container {
         max-width: 960px;
+    }
+
+    .airpods {
+        justify-content: center;
+    }
+
+    .airpods__item-text p {
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    .airpods__big span {
+        margin: 13px;
+    }
+
+    .iphones {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 15px;
     }
     
 }
@@ -10,18 +30,219 @@
         max-width: 720px;
     }
 
+    .airpods__big {
+        flex-direction: column;
+    }
+
+    .airpods__big span {
+        width: 1px;
+        height: 50px;
+        margin: 12px 0 14px;
+    }
+
+    .airpods__left p, .airpods__right p {
+        text-align: justify;
+    }
+
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+    .nav__panel {
+        background-color: rgba(40, 40, 40, 0.993);
+        backdrop-filter: blure(20px);
+    }
+
+    .header__left {
+        width: 100%;
+    }
+
+    .header__button {
+        display: block;
+        margin: auto;
+    }
+
+    .header__button:hover {
+        color: rgb(156, 156, 156);
+    }
+
+    .header__button:focus {
+        color: rgb(156, 156, 156);
+    }
+
+    .header__button:focus ~ .header__list {
+        visibility: visible;
+    }
+    
+    .header__list {
+        position: absolute;
+        top: 56px;
+        left: 50%;
+        transform: translate(-40%);
+        background: #282828;
+        flex-direction: column;
+        max-width: 200px;
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        background-color: rgba(40, 40, 40, 0.993);
+        backdrop-filter: blure(20px);
+        visibility: hidden;
+    }
+    
+    .header__list li {
+        height: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header__list li a {
+        line-height: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .header__list li a:hover {
+        color: rgb(156, 156, 156);
+    }
+
+    .airpods__item-text p {
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .iphones {
+        grid-template-columns: repeat(1, 200px);
+        row-gap: 15px;
+        justify-content: center;
+    }
+
+    .footer__button {
+        display: block;
+        margin: auto;
+    }
+
+    .footer__button:hover {
+        color: rgb(156, 156, 156);
+    }
+
+    .footer__button:focus {
+        color: rgb(156, 156, 156);
+    }
+
+    .footer__button:focus ~ .footer__list {
+        visibility: visible;
+    }
+
+    .footer__list {
+        position: absolute;
+        bottom: 138px;
+        left: 50%;
+        transform: translate(-50%);
+        background: #282828;
+        flex-direction: column;
+        max-width: 200px;
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        background-color: rgba(40, 40, 40, 0.993);
+        backdrop-filter: blure(20px);
+        visibility: hidden;
+        z-index: 999;
+    }
+
+    .footer__list li {
+        height: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__list li a {
+        line-height: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer__list li a:hover {
+        color: rgb(156, 156, 156);
+    }
+
 
 }
 
-@media (max-width: 540px) {
+@media (max-width: 679px) {
+
+    .header__title h1 {
+        margin: 30px;
+        line-height: 60px;
+        font-size: 65px;
+    }
+   
+}
+
+@media (max-width: 507px) {
+
+    .header__title h1 {
+        margin: 25px;
+        line-height: 50px;
+        font-size: 55px;
+    }
+   
+}
+
+@media (max-width: 431px) {
+
+    .header__list {
+        max-width: 150px;
+    }
+
+    .header__title h1 {
+        margin: 25px;
+        line-height: 50px;
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+
+    .footer__list {
+        bottom: 167px;
+        max-width: 150px;
+    }
+
+    .footer__links {
+        flex-direction: column;
+    }
+
+    .footer__links span:first-child {
+        margin-bottom: 29px;
+    }
 
    
+}
+@media (max-width: 341px) {
+
+   .header__nav, .airpods__item-text, .airpods__item, .airpods__left p, .airpods__right p, .footer__nav {
+       padding: 0 15px;
+   }
+
+   .header__list {
+    max-width: 100px;
+    }
+
+.footer__list {
+    max-width: 100px;
+}
+
 }
 
 @media (max-width: 492px) { 

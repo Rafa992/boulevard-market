@@ -57,6 +57,15 @@ img {
     align-items: center;
 }
 
+.header__button {
+    background: none;
+    border: none;
+    color: #fff;
+    line-height: 30px;
+    font-size: 30px;
+    display: none;
+}
+
 .header__list {
     display: flex;
 }
@@ -261,6 +270,28 @@ padding: 10px 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.footer__button {
+    background: none;
+    border: none;
+    color: #fff;
+    line-height: 30px;
+    font-size: 30px;
+    display: none;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__list li a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: inline-block;
+    color: #FFFFFF;
+    margin-left: 30px;
 }
 
 .footer__links {
