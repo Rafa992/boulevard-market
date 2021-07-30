@@ -1,3 +1,10 @@
+@import url(fonts.css);
+
+:root {
+    --fontFirst: "Montserrat";
+    --fontSecond: "Prosto_One";
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -71,8 +78,9 @@ img {
 }
 
 .header__list li a {
+    font-family: var(--fontFirst);
+    font-weight: 700;
     font-style: normal;
-    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     display: inline-block;
@@ -107,24 +115,24 @@ img {
 }
 
 .header__title h1 {
+    font-family: var(--fontSecond);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 100px;
     line-height: 75px;
     color: #FFFFFF;
-    font-family: 'Prosto One';
     margin-bottom: 38px;
 }
 
 .header__title .header__link {
+    font-family: var(--fontFirst);
+    font-style: normal;
+    font-weight: 500;
     display: inline-block;
     padding: 13px 14px;
     background: #FFFFFF;
     border-radius: 10px;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
     text-transform: uppercase;
     color: #171718;
 }
@@ -155,6 +163,7 @@ img {
 }
 
 .airpods__item-text p {
+    font-family: var(--fontFirst);
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -188,10 +197,10 @@ img {
 
 .airpods__left p,
  .airpods__right p {
+     font-family: var(--fontFirst);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     color: #FFFFFF;
 }
 
@@ -224,19 +233,19 @@ img {
 }
 
 .iphone h3 {
+    font-family: var(--fontFirst);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     margin-bottom: 10px;
     color: #000000;
 }
 
 .price {
+    font-family: var(--fontFirst);
     font-style: normal;
-font-weight: normal;
+font-weight: 400;
 font-size: 14px;
-line-height: 17px;
 text-transform: uppercase;
 color: #000000;
 display: inline-block;
@@ -244,14 +253,14 @@ padding: 10px 0 20px;
 }
 
 .iphone__link {
+    font-family: var(--fontFirst);
     max-width: 161px;
     width: 100%;
     padding: 7px 0;
     background: #151515;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
     text-transform: uppercase;
     font-weight: bold;
     color: #FFFFFF;
@@ -285,10 +294,10 @@ padding: 10px 0 20px;
 }
 
 .footer__list li a {
+    font-family: var(--fontFirst);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     display: inline-block;
     color: #FFFFFF;
     margin-left: 30px;

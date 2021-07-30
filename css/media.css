@@ -30,6 +30,10 @@
         max-width: 720px;
     }
 
+    .airpods__img {
+        order: 1;
+    }
+
     .airpods__big {
         flex-direction: column;
     }
@@ -44,12 +48,26 @@
         text-align: justify;
     }
 
+    .iphones {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .iphone {
+        margin: auto;
+    }
+
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
+
+    .main {
+        padding-bottom: 30px;
+    }
+
     .nav__panel {
         background-color: rgba(40, 40, 40, 0.993);
         backdrop-filter: blure(20px);
@@ -113,6 +131,15 @@
     .airpods__item-text p {
         line-height: 25px;
         font-size: 20px;
+        text-align: center;
+    }
+
+    .airpods__left p {
+        text-align: center;
+    }
+
+    .airpods__right p {
+        text-align: center;
     }
 
     .iphones {
@@ -121,58 +148,13 @@
         justify-content: center;
     }
 
-    .footer__button {
-        display: block;
-        margin: auto;
-    }
-
-    .footer__button:hover {
-        color: rgb(156, 156, 156);
-    }
-
-    .footer__button:focus {
-        color: rgb(156, 156, 156);
-    }
-
-    .footer__button:focus ~ .footer__list {
-        visibility: visible;
-    }
-
     .footer__list {
-        position: absolute;
-        bottom: 138px;
-        left: 50%;
-        transform: translate(-50%);
-        background: #282828;
-        flex-direction: column;
-        max-width: 200px;
-        width: 100%;
-        padding: 10px;
-        margin: auto;
-        background-color: rgba(40, 40, 40, 0.993);
-        backdrop-filter: blure(20px);
-        visibility: hidden;
-        z-index: 999;
+        display: none;
     }
 
-    .footer__list li {
-        height: 50px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+    .footer {
+        padding: 60px 0;
     }
-    
-    .footer__list li a {
-        line-height: 20px;
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .footer__list li a:hover {
-        color: rgb(156, 156, 156);
-    }
-
 
 }
 
@@ -213,27 +195,17 @@
         padding: 30px 0;
     }
 
-
-    .footer__list {
-        bottom: 167px;
-        max-width: 150px;
-    }
-
-    .footer__links {
+    .footer__nav {
         flex-direction: column;
+
     }
 
     .footer__links span:first-child {
         margin-bottom: 29px;
     }
 
-   
 }
 @media (max-width: 341px) {
-
-   .header__nav, .airpods__item-text, .airpods__item, .airpods__left p, .airpods__right p, .footer__nav {
-       padding: 0 15px;
-   }
 
    .header__list {
     max-width: 100px;
@@ -245,13 +217,3 @@
 
 }
 
-@media (max-width: 492px) { 
-}
-
-@media (max-width: 340px) {
-
-    .container {
-        padding: 0;
-    }
-
-}
